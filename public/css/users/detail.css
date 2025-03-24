@@ -1,0 +1,79 @@
+.container_detail{
+    display: flex;
+}
+
+.container_detail .div_left{
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+
+.container_detail .div_right{
+    width: 50%;
+    height: auto;
+}
+
+.container_detail .div_right .price{
+    margin-top: 10vh;
+}
+
+.container_detail .quantity{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.container_detail .quantity button {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container_detail .quantity input {
+    border: none;
+    text-align: center;
+    width: 50px;
+    height: 42px;
+    font-size: 16px;
+}
+
+.container_detail .quantity .btn-decrease{
+    border-right: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container_detail .quantity .btn-increase{
+    border-left: 1px solid gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container_detail .quantity button:hover {
+    background-color: #e2e6ea;
+}
+
+.container_detail .quantity input:focus {
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#collapseBtn {
+    width: 20%;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}

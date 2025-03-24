@@ -1,0 +1,340 @@
+.container-fluid.container1{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #A8D5BA;
+}
+
+.container-fluid.container1 .logo{
+    width: 30%;
+    height: auto;
+}
+
+.container-fluid.container1 .logo img{
+    width: 180px;
+    height: 80px;
+    cursor: pointer;
+    padding-right: 15px;
+    float: right;
+}
+
+.container-fluid.container1 .search{
+    width: 40%;
+    height: auto;
+}
+
+.container-fluid.container1 .search .form_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid.container1 .search input{
+    width: 500px;
+    height: 30px;
+    padding-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid black;
+    border-right: none;
+    outline: none;
+}
+
+.container-fluid.container1 .search i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.container-fluid.container1 .account{
+    width: 30%;
+    height: auto;
+    display: flex;
+    padding-left: 15px;
+}
+
+.container-fluid.container1 .account .cart{
+    width: 65px;
+    height: 65px;
+    padding-top: 15px;
+}
+
+.container-fluid .account .cart i{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.container-fluid.container1 .account .cart span{
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.container-fluid.container1 .account .user{
+    width: 65px;
+    height: 65px;
+    padding-top: 15px;
+}
+
+.container-fluid.container1 .account .user i{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.container-fluid.container1 .account .user span{
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.mobile{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #A8D5BA;
+}
+
+.mobile .search1{
+    width: 100%;
+    height: auto;
+}
+
+.mobile .search1 .form_search1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile .search1 input{
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid black;
+    border-right: none;
+    outline: none;
+}
+
+.mobile .search1 i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+    .mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .container-fluid.container1 .logo{
+        width: 50%;
+    }
+
+    .container-fluid.container1 .search{
+        justify-content: end;
+    }
+
+    .container-fluid.container1 .search input{
+        display: none;
+    }
+
+    .container-fluid.container1 .search i{
+        display: none;
+    }
+
+    .container-fluid.container1 .account{
+        width: 50%;
+    }
+
+    .container-fluid.container1 .account .user{
+        margin-left: 15px;
+    }
+}
+
+/* -------------------- Navbar -------------------- */
+
+.container-fluid.container2{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid.container2 ul{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.container-fluid.container2 ul li{
+    list-style-type: none;
+    padding: 0 60px;
+    text-align: center;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+.container-fluid.container2 ul li a{
+    font-size: 30px;
+    color: unset;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid.container2 ul li i{
+    margin-right: 10px;
+}
+
+.container-fluid.container2 ul .li:hover{
+    background-color: #A8D5BA;
+}
+
+.container-fluid.container2 ul .li:hover a{
+    color: white;
+}
+
+.container-fluid.container2 .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: -5px;
+    width: 320px;
+    max-height: 300px;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: block;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    font-size: 10px;
+    color: black !important;
+    text-decoration: none;
+    white-space: normal;
+    background-color: white;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.dropdown-menu li:hover {
+    border-left: 5px solid #A8D5BA;
+    padding-left: 8px;
+}
+
+.dropdown-menu li:hover a{
+    color: #A8D5BA !important;
+}
+
+@media screen and (max-width: 768px ){
+    .container-fluid.container2{
+        height: 100px;
+    }
+
+    .container-fluid.container2 ul{
+        flex-wrap: wrap;
+    }
+
+    .container-fluid.container2 ul li{
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-fluid.container2 ul li a{
+        font-size: 20px;
+    }
+
+    .container-fluid.container2 ul li i{
+        margin-right: 10px;
+    }
+}
+
+.log{
+    width: 170px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 70%;
+    z-index: 999;
+}
+
+.log ul {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.log ul li{
+    height: 30px;
+    list-style-type: none;
+    padding-left: 30px;
+    line-height: 25px;
+}
+
+.log ul li a{
+    color: unset;
+    text-decoration: none;
+}
+
+.log ul li:hover{
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
